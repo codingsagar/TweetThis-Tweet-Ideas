@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200;300;400;600&family=Spartan&display=swap');
+*{
+  transition: all 420ms;
+  user-select: none;
+}
+.btn{
+  @apply bg-[#3A3636] px-4 py-1 text-white font-semibold rounded-md sm:px-5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+.shadow-white{
+  box-shadow: 0 0px 10px 0 rgba(231, 230, 230, 0.4);
 }
