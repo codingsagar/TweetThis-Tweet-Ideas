@@ -1,8 +1,12 @@
-import React from "react";
+import React,{useContext} from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import DataContext from "../Context/DataContext";
 
-const Followus = ({ theme }) => {
+const Followus = () => {
+
+  const {theme} = useContext(DataContext);
+  
   return (
     <div className="flex flex-col justify-center items-center h-[75vh] gap-y-9">
       <h2

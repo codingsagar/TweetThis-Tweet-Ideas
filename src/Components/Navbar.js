@@ -1,14 +1,16 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import NightIcon from "../Images/dark.png"
 import LightIcon from "../Images/light.png"
 import { Link } from 'react-router-dom'
+import DataContext from '../Context/DataContext'
 
-
-const Navbar = ({theme,setTheme,thm}) => {
+const Navbar = () => {
+  
+  const {theme,setTheme,themeChange}= useContext(DataContext);
 
   const handleTheme = ()=>{
     theme==="light"?setTheme("dark"):setTheme("light");
-    thm();
+    themeChange();
   }
   return (
     <nav className={`md:flex-row flex items-center justify-between px-16 flex-col py-5 gap-y-6 ${theme==="dark"?"shadow-white":"shadow-md"}  h-[100%]`}>

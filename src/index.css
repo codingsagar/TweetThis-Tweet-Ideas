@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200;300;400;600&family=Spartan&display=swap');
-*{
-  transition: all 420ms;
-  user-select: none;
+body{
+  transition: all 500ms;
 }
 .btn{
-  @apply bg-[#3A3636] px-4 py-1 text-white font-semibold rounded-md sm:px-5;
+  @apply bg-[#3A3636] px-4 py-1 text-white font-semibold rounded-md sm:px-5 transition-all;
 }
 
 @tailwind base;
